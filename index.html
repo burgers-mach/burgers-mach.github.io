@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Burgers Mach</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="Burgers Mach" />
+    <meta property="og:description " content="Turnero" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://web-burgers-mach.vulktech.com" />
+    <meta
+      property="og:image"
+      content="https://web-burgers-mach.vulktech.com/assets/images/logo.jpg"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+  </head>
+  <body class="text-center">
+    <main class="custom-container">
+      <div
+        v-scope
+        v-cloak
+        v-on:vue:mounted="mounted"
+        v-on:vue:unmounted="unmounted"
+      >
+        <img alt="Logo" src="assets/images/hamburguer.png" width="200" />
+        <div class="mb-1"></div>
+        <h1 class="custom-font-size">{{ currentTurn }}</h1>
+        <p class="lead fw-bold fs-1">Listo para retirar.</p>
+      </div>
+    </main>
+
+    <audio class="d-none" id="beep-sound">
+      <source src="assets/sound/beep.wav" type="audio/wav" />
+    </audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/petite-vue@0.4.1/dist/petite-vue.iife.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>
